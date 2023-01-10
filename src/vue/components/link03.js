@@ -10,10 +10,10 @@ export default {
         <div class="container-xxl px-3 px-md-4 px-xl-5 px-xxl-3">
             <div class="row row-cols-2 gx-3">
                 <div class="col">
-                    <div class="text-bg-secondary">home.js</div>
+                    <div class="text-bg-secondary">page03.js</div>
                 </div>
                 <div class="col">
-                    <div class="text-bg-secondary text-end">home.js</div>
+                    <div class="text-bg-secondary text-end">page03.js</div>
                 </div>
             </div>
         </div>

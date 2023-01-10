@@ -11035,23 +11035,84 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-header a[aria-controls=navToggle] .line {
-  transition: y 200ms ease-in 200ms, rotate 200ms ease-in, opacity 0ms 200ms;
-  transform-origin: center;
-  fill: hsl(300deg, 100%, 99%);
+#mouse-trailer {
+  pointer-events: none;
+  width: 28px;
+  height: 28px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
 }
-header a[aria-controls=navToggle][aria-expanded=true] .line {
-  transition: y 200ms ease-in, rotate 200ms ease-in 200ms, opacity 0ms 200ms;
+
+#mouse-trailer svg circle {
+  transition: r 400ms ease-in;
 }
-header a[aria-controls=navToggle][aria-expanded=true] :is(.top, .bottom) {
-  y: 46;
+#mouse-trailer svg circle.c1 {
+  r: 0;
+  stroke: hsl(30deg, 11%, 11%);
+  fill: none;
 }
-header a[aria-controls=navToggle][aria-expanded=true] .top {
-  rotate: 45deg;
+#mouse-trailer svg circle.c2 {
+  r: 0;
+  stroke: hsl(30deg, 11%, 11%);
+  fill: none;
 }
-header a[aria-controls=navToggle][aria-expanded=true] .middle {
-  opacity: 0;
+#mouse-trailer svg circle.c3 {
+  r: 28;
+  stroke: none;
+  fill: hsl(30deg, 11%, 11%);
 }
-header a[aria-controls=navToggle][aria-expanded=true] .bottom {
-  rotate: -45deg;
+
+#mouse-trailer.expanded svg circle.c1 {
+  r: 38;
+}
+#mouse-trailer.expanded svg circle.c2 {
+  r: 32;
+}
+#mouse-trailer.expanded svg circle.c3 {
+  r: 0;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-out {
+  -webkit-animation: fade-out 0.8s ease-out both;
+  animation: fade-out 0.8s ease-out both;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
