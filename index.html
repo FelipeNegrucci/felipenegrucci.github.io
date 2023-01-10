@@ -1,45 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style.css">
-    <title>Start Template</title>
+    <title>Document</title>
 </head>
-<body class="min-vh-100">
-
-    <div id="app">
-        <div id="mouse-trailer" :class="trailerClassObject">
-            <svg viewBox="0 0 100 100">
-                <circle class="c1" cx="50" cy="50" stroke-width="4"/>
-                <circle class="c2" cx="50" cy="50" stroke-width="2"/>
-                <circle class="c3" cx="50" cy="50"/>
-            </svg>
-        </div>
-        <app-header></app-header>
-        <main>
-            <router-view></router-view>
-        </main>
-        <app-footer></app-footer>
-        <div class="container-fluid mt-5">
-            <div
-                @mouseover="mouse.trailer.isExpanded = true"
-                @mouseleave="mouse.trailer.isExpanded = device.type != 'laptop' ? true : false"
-                class="mx-auto" style="width: 360px; height: 360px; background-color: greenyellow;">
-            </div>
-        </div>
-    </div>
-
-    <!-- VUE 3.2.45 -->
-    <script src="./src/modules/vue/vue.global.min.js"></script>
-    <!-- VUE ROUTER 4.1.6 -->
-    <script src="./src/modules/vue/vue-router.global.min.js"></script>
-    <!-- BOOTSTRAP 5.2.3 -->
-    <script src="./src/modules/bs/bootstrap.bundle.min.js"></script>
-    <!-- PTS 0.11.3 -->
-    <script src="./src/modules/pts/pts.min.js"></script>
-    <!-- MAIN -->
-    <script type="module" src="./src/main.js"></script>
+<body>
+    
 </body>
 </html>
